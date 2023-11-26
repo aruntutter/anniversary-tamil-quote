@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  /* Set to 100% for responsiveness */
+  height: 100vh;
+  /* Set to 100vh for full viewport height */
+}
+
+#backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quote {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+#quote1 {
+  margin-bottom: 150px;
+  /* Adjust the margin as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
