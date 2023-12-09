@@ -6,9 +6,7 @@ body {
 .container {
   position: relative;
   width: 100%;
-  /* Set to 100% for responsiveness */
   height: 100vh;
-  /* Set to 100vh for full viewport height */
 }
 
 #backgroundImage {
@@ -34,8 +32,24 @@ body {
 }
 
 #quote1 {
-  margin-bottom: 150px;
-  /* Adjust the margin as needed */
+  margin-bottom: 300px;
+}
+
+#quote2 {
+  margin-bottom: 130px;
+}
+
+.audio-controls {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-right: 10px;
 }
 
 @keyframes fadeIn {
