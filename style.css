@@ -26,9 +26,16 @@ body {
   font-weight: bold;
 }
 
+.constant-text {
+  font-size: 20px;
+}
+
 .quote {
+  width: 320px;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fadeInOut 2s infinite;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 20px;
 }
 
 #quote1 {
@@ -37,6 +44,7 @@ body {
 
 #quote2 {
   margin-bottom: 130px;
+  font-size: 18px;
 }
 
 .audio-controls {
@@ -49,15 +57,21 @@ body {
 }
 
 button {
+  font-size: 12px;
   margin-right: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid 1px;
 }
 
-@keyframes fadeIn {
-  from {
+@keyframes fadeInOut {
+
+  0%,
+  100% {
     opacity: 0;
   }
 
-  to {
+  50% {
     opacity: 1;
   }
 }
